@@ -82,3 +82,4 @@ On pointer-capable devices (`pointer: fine`), the default cursor is hidden and r
 
 The site is a static directory, so any host works. The live version is served from [pickle.vaiskiainen.fi](https://pickle.vaiskiainen.fi).
 
+AI was used for this readme
