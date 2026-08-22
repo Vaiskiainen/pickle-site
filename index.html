@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pickle Animations</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="parallax-bg">
+      <div class="parallax-radial"></div>
+      <div id="parallax-glow-1" class="parallax-glow"></div>
+      <div id="parallax-glow-2" class="parallax-glow"></div>
+      <div id="parallax-glow-3" class="parallax-glow"></div>
+      <div id="parallax-glow-4" class="parallax-glow"></div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <nav id="navbar">
+      <div class="page-container navbar-inner">
+        <a href="/" class="navbar-logo">
+          <div class="navbar-logo-avatar">
+            <img
+              src="https://yt3.ggpht.com/ZBG6HnvtFbj5cXTGZIOj0Y3KPi8911pTlIwQFhrLoNZEDa7sT7aPDVIIouVNYKE-e6a60Nyu_ZY=s512-c-k-c0x00ffffff-no-rj-mo"
+              alt="Logo"
+            />
+          </div>
+          <span class="navbar-logo-text">Pickle Animations</span>
+        </a>
+        <div class="navbar-links">
+          <a href="/" id="nav-home" class="nav-item">Home</a>
+          <a href="/drawings.html" id="nav-drawings" class="nav-item">Drawings</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div id="hero-banner" class="hero-banner">
+        <div class="hero-banner-overlay"></div>
+        <img id="hero-banner-img" src="" alt="Channel Banner" />
+      </div>
+
+      <div id="hero-content">
+        <div class="hero-animated-item hero-avatar">
+          <img
+            src="https://yt3.ggpht.com/ZBG6HnvtFbj5cXTGZIOj0Y3KPi8911pTlIwQFhrLoNZEDa7sT7aPDVIIouVNYKE-e6a60Nyu_ZY=s512-c-k-c0x00ffffff-no-rj-mo"
+            alt="Pickle Animations logo"
+          />
+        </div>
+
+        <h1 class="hero-animated-item hero-title">Pickle Animations</h1>
+
+        <div class="hero-animated-item hero-sub-badge">
+          <img src="/icons/youtube.svg" alt="" aria-hidden="true" class="icon" />
+          <span id="subscriber-count">...</span>
+          Subscribers
+        </div>
+
+        <p class="hero-animated-item hero-description">Pickle Animations</p>
+
+        <div class="hero-animated-item hero-actions">
+          <div class="hero-buttons-row">
+            <a
+              href="https://www.youtube.com/@PickleAnimationYT"
+              target="_blank"
+              class="btn btn-subscribe"
+            >
+              <img src="/icons/youtube.svg" alt="" aria-hidden="true" class="icon" />
+              Subscribe
+            </a>
+            <a href="/drawings.html" class="btn btn-drawings">
+              <img src="/icons/pencil.svg" alt="" aria-hidden="true" class="icon" />
+              View Drawings
+            </a>
+          </div>
+          <a href="#" class="btn btn-discord">
+            <img src="/icons/discord.svg" alt="" aria-hidden="true" class="icon" />
+            Join the Discord
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <img src="/icons/arrow-down.svg" alt="" aria-hidden="true" class="icon" />
+      </div>
+    </section>
+
+    <section id="video-scroll">
+      <div class="page-container video-scroll-heading">
+        <h2>Recent <span>Uploads</span></h2>
+      </div>
+      <div id="video-scroll-container">
+        <div id="video-track"></div>
+      </div>
+    </section>
+
+    <section id="drawings-preview">
+      <div class="page-container">
+        <div class="section-header" id="drawings-preview-header">
+          <div>
+            <h2 class="section-title">Latest <span>Drawings</span></h2>
+            <p class="section-subtitle">A glimpse into recent artwork.</p>
+          </div>
+          <a href="/drawings.html" class="view-all-link">
+            View all drawings
+            <img src="/icons/arrow-right.svg" alt="" aria-hidden="true" class="icon" />
+          </a>
+        </div>
+
+        <div id="drawings-preview-grid"></div>
+
+        <div class="view-all-mobile">
+          <a href="/drawings.html">
+            View all drawings
+            <img src="/icons/arrow-right.svg" alt="" aria-hidden="true" class="icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="socials">
+      <div class="page-container--mid socials-inner">
+        <div id="socials-header">
+          <h2 class="socials-title">Reach out</h2>
+          <p class="socials-subtitle">Find Pickle on:</p>
+        </div>
+        <div id="socials-grid"></div>
+      </div>
+    </section>
+
+    <div id="video-modal" class="modal-overlay hidden">
+      <div id="video-modal-content">
+        <button id="video-close" class="modal-close">
+          <img src="/icons/close.svg" alt="Close" class="icon" />
+        </button>
+        <button id="video-prev" class="modal-nav">
+          <img src="/icons/chevron-left.svg" alt="Previous" class="icon" />
+        </button>
+        <button id="video-next" class="modal-nav">
+          <img src="/icons/chevron-right.svg" alt="Next" class="icon" />
+        </button>
+        <iframe
+          id="video-iframe"
+          width="100%"
+          height="100%"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <button id="back-to-top" aria-label="Back to top">
+      <img src="/icons/arrow-up.svg" alt="" aria-hidden="true" class="icon" />
+    </button>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
